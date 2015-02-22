@@ -56,8 +56,13 @@ if(isset($_GET['action']) && $_GET['action'] == "login") {
 		$password = $_POST['password'];
 
 		$query = "Select * From user where S_ID = '" . $username . "' and password = '" . $password . "'";
+if ($query = $conn->prepare("SELECT * From user where S_ID= ? and password = ?")) {
+$query->bind_param("s", $username);
+$query->execute();
+ $query->bind_result($result);
+ $query->close();
+}
 
-		$result = mysqli_query($conn, $query);
 
 		if(mysqli_num_rows($result) > 0){
 
