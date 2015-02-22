@@ -55,11 +55,11 @@ if(isset($_GET['action']) && $_GET['action'] == "login") {
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 
-		$query = "Select * From user where S_ID = '" . $username . "' and password = '" . $password . "'";
+		//$query = "Select * From user where S_ID = '" . $username . "' and password = '" . $password . "'";
 if ($query = $conn->prepare("SELECT * From user where S_ID= ? and password = ?")) {
-$query->bind_param("s", $username);
+$query->bind_param("ss", $username,$password);
 $query->execute();
- $query->bind_result($result);
+$result = $query->get_result();
  $query->close();
 }
 
