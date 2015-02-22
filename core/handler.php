@@ -95,10 +95,17 @@ elseif( isset($_GET['action']) && $_GET['action'] == "signup") {
 
 		$email = substr($_POST['email'],0,9);
 		$password = $_POST['passwd'];
+if($query = $mysqli->prepare("SELECT * FROM user where S_ID = ?")){
+	$query->bind_param("s", $email);
+$query->execute();
+$result = $query->get_result();
+ $query->close();
+}
 
-		$query = "Select * From user where S_ID = '" . $email . "'";
 
-		$result = mysqli_query($conn, $query);
+		//$query = "Select * From user where S_ID = '" . $email . "'";
+
+		//$result = mysqli_query($conn, $query);
 
 		if(mysqli_num_rows($result) == 0){
 
