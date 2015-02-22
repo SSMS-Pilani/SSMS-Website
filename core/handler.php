@@ -95,7 +95,7 @@ elseif( isset($_GET['action']) && $_GET['action'] == "signup") {
 
 		$email = substr($_POST['email'],0,9);
 		$password = $_POST['passwd'];
-if($query = $mysqli->prepare("SELECT * FROM user where S_ID = ?")){
+if($query = $conn->prepare("SELECT * FROM user where S_ID = ?")){
 	$query->bind_param("s", $email);
 $query->execute();
 $result = $query->get_result();
@@ -160,11 +160,17 @@ elseif( isset($_GET['action']) && $_GET['action'] == "changepwd"){
 
 	if(isset($_SESSION['username']) && $_POST['oldpasswd'] && $_POST['newpasswd'] && $_POST['repasswd'] && $_POST['newpasswd'] == $_POST['repasswd']){
 
+$query = $conn->prepare("update user set password=? where S_ID=? and password = ? "); 
+	$query->bind_param("sss", $_POST['newpasswd'],$_SESSION['username'], $_POST['oldpasswd']);
+$query->execute();
+$result = $query->get_result();
+ $query->close();
 
 
-		$query = "UPDATE user Set password = '" . $_POST['newpasswd'] . "' where S_ID = '" . $_SESSION['username'] . "' and password = '" . $_POST['oldpasswd'] . "'";
 
-		$result = mysqli_query($conn, $query);
+	//	$query = "UPDATE user Set password = '" . $_POST['newpasswd'] . "' where S_ID = '" . $_SESSION['username'] . "' and password = '" . $_POST['oldpasswd'] . "'";
+
+	//	$result = mysqli_query($conn, $query);
 
 		if($result){
 
