@@ -10,10 +10,13 @@ if(isset($_GET['email']) && isset($_SESSION['login_page']) && $_SESSION['login_p
 		if(strpos($_GET['email'], "@pilani.bits-pilani.ac.in") !== FALSE) {
 
 			$email = substr($_GET['email'], 0, 8) . "P";
+			// echo $email;
 
-			$query = "Select * From STUDENT where S_ID = '" . $email . "'";
+			$query = "Select * From student where s_id = '" . $email . "'";
 
 			$result = mysqli_query($conn, $query);
+
+
 
 			if(mysqli_num_rows($result) > 0){
 
@@ -21,12 +24,13 @@ if(isset($_GET['email']) && isset($_SESSION['login_page']) && $_SESSION['login_p
 
 				$_SESSION['username'] = $email;
 				$_SESSION['privilege'] = 0;
+				// echo $_SESSION['username'];
 				// header('location:./../dashboard.php');
 				// return true;
 			}
 
 			else {
-				echo "Facebook";
+				echo "You are not logging in with BITS Mail!";
 				// return false;
 
 			}
@@ -241,7 +245,7 @@ elseif( isset($_GET['action']) && $_GET['action'] == "export_feedback"){
 			header("Content-disposition: attachment; filename=feedback_" . $date . ".csv");
 			header("Pragma: no-cache");
 			header("Expires: 0");
-			
+
 
 
 			// echo "Feedback_ID, Timestamp of the Feedback, Meal, S_ID, Comments,\n";
@@ -251,12 +255,12 @@ elseif( isset($_GET['action']) && $_GET['action'] == "export_feedback"){
 			// 	echo $arr[0] . "," . $arr[1] . "," . $arr[2] . "," . $arr[3] . "," . $arr[4] . ",\n";
 			// }
 
-			
+
 			//header('location:./../dashboard.php?error=completed');
 		}
 
 		else{
-			
+
 			header('location:./../dashboard.php?error=4');
 		}
 
@@ -350,7 +354,7 @@ elseif( isset($_GET['action']) && $_GET['action'] == 'gen_feedback'){
 
 	if ( isset($_SESSION['username']) && isset( $_POST['comments'] ) ) {
 
-		$query = "INSERT INTO GENERAL_FEEDBACK(S_ID,COMMENTS) VALUES('" . $_SESSION['username'] . "', '" . $_POST['comments'] . "')";
+		$query = strtolower("INSERT INTO GENERAL_FEEDBACK(S_ID,COMMENTS) VALUES('" . $_SESSION['username'] . "', '" . $_POST['comments'] . "')");
 
 		$result = mysqli_query($conn, $query );
 
@@ -557,7 +561,7 @@ elseif( isset($_GET['action']) && $_GET['action'] == 'upload_grub_data'){
 					$final_query = substr($final_query, 0, strlen($final_query) - 1);
 					echo $final_query;
 					mysqli_query($conn, $final_query);
-					
+
 					header('location:./../dashboard.php');
 				}
 
@@ -600,7 +604,7 @@ elseif( isset($_GET['action']) && $_GET['action'] == 'add_new_grub'){
 
 		if($result_2)
 			header('location:./../' . ADMIN_URL . 'edit_grub.php?grub_id=' . $new_id);
-		
+
 		else
 			header('location:./../dashboard.php?error=1');
 	}

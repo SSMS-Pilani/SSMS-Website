@@ -5,7 +5,7 @@ require "./header.php";
 
 require CLASSES_URL . 'user.php';
 
-if(! $_SESSION['username']){
+if(! isset( $_SESSION['username'] ) ) {
 
 	header('location:' . ROOT_URL . 'login.php');
 
@@ -233,7 +233,7 @@ $(document).ready(function(){
                                 if(str.search("error=1") != -1){
                                   document.getElementById("pwd-alert").style.display = "block";
                                   document.getElementById("pwd-alert").innerHTML = "Error : Please Try again!";
-                                  
+
                                 }
                                 if(str.search("error=done") != -1){
                                   document.getElementById("pwd-alert").style.display = "block";
@@ -491,7 +491,7 @@ $(document).ready(function(){
                                 $(function() {
                                     $('#date').datepick({dateFormat: 'yyyy-mm-dd',maxDate: <?php echo "'" . date('Y-m-d') . "'"; ?>, minDate: <?php echo "'" . date('Y-m-d', strtotime(date('Y-m-d') . ' - 2 days')) . "'"; ?>});
                                     <?php if (isset($_POST['btn-feedback'])) { ?>
-                                        $('#feedback_btn').click();  
+                                        $('#feedback_btn').click();
                                         $('#feedback_panel').hide();
 
                                     <?php } ?>

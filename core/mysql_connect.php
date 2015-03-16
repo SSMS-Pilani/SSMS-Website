@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname="ssms";
+$servername = "mysql.hostinger.in";
+$username = "u660987572_ssms";
+$password = "ssms1234";
+$dbname="u660987572_ssms";
 
 // Create connection
 $conn= new mysqli($servername, $username, $password, $dbname);

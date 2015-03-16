@@ -144,7 +144,7 @@ $(function() {
 
 								echo $target_file;
 
-								$query = "INSERT INTO menu_item(DATE,BLD,NAME) VALUES(";
+								$query = strtolower("INSERT INTO menu_item(DATE,BLD,NAME) VALUES(");
 
 								$objPHPExcel = PHPExcel_IOFactory::load($target_file);
 

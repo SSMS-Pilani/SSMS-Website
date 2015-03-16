@@ -5,7 +5,7 @@ define('ROOT_URL', "");
 define('INCLUDES_URL', ROOT_URL . "includes/");
 define('ADMIN_URL', ROOT_URL . "admin/");
 define('CORE_URL', ROOT_URL . "core/");
-define('WP_URL', "./wordpress/");
+define('WP_URL', "./news/");
 define('CLASSES_URL', ROOT_URL . "classes/");
 
 session_start();
@@ -30,4 +30,3 @@ include CORE_URL . 'mysql_connect.php';
 </head>
 
     <!--Fixed navigation bar =======================================================================================-->
-   

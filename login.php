@@ -1,17 +1,14 @@
 
-<?php 
+<?php
 
 require './header.php';
-               
+
 
   if(isset($_SESSION['username'])){
     header('location:' . ROOT_URL . 'dashboard.php');
-  } 
+  }
 
   $_SESSION['login_page'] = 1;
-
-
-  
 
 ?>
 
@@ -45,19 +42,19 @@ require './header.php';
     }
     // document.getElementById('responseContainer').value = 'Primary email: ' +
         // primaryEmail + '\n\nFull Response:\n' + JSON.stringify(resp);
-         
+
 
         if ( primaryEmail.indexOf("@pilani.bits-pilani.ac.in") !== -1 ) {
 
           $.ajax({url: "./core/handler.php?email=" + primaryEmail, success: function(result){
-              if (result !== "Please Login using only BITS Mail"){
+              if (result != "Please Login using only BITS Mail"){
                 window.location.href = "dashboard.php";
-                  
+
               }
               else {
                 alert("Please Login using only BITS Mail!");
               }
-              
+
           }});
         }
 
@@ -69,9 +66,9 @@ require './header.php';
 
   </script>
 <?php
-  
-  
-  
+
+
+
 ?>
 
 
@@ -112,10 +109,10 @@ require './header.php';
             </div>
         </div>
     </div>
-    
-    
+
+
 <!-- =============================================BITS MAIL Login Form ======================================== -->
-  <div class="row">  
+  <div class="row">
 
         <div style="display:none" id="login-alert-gmail" class="alert alert-danger"></div>
                         <script type="text/javascript">
@@ -151,12 +148,12 @@ require './header.php';
 
 <!-- =============================================SSMS login Form ======================================== -->
         <center><h3><a href="#" onClick="S();" class="btn btn-primary">Login (for SSMS Team Only)</a></h3></center>
-        <div id="loginbox" style="margin-top:50px;display:none" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+        <div id="loginbox" style="margin-top:50px;display:none" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
             <div class="panel panel-info" >
                     <div class="panel-heading">
                         <div class="panel-title">Sign In(Only for SSMS Team)</div>
                         <!-- <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div> -->
-                    </div>     
+                    </div>
 
                     <div style="padding-top:30px" class="panel-body" >
 
@@ -172,25 +169,25 @@ require './header.php';
                           A();
 
                         </script>
-                   
+
                         <form id="loginform" class="form-horizontal" method="POST" action="<?php echo CORE_URL;?>handler.php?action=login">
-                            
-                                                                        
+
+
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="S_ID For ex. F2012999P">                                        
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="S_ID For ex. F2012999P">
                                     </div>
-                                
+
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                         <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
                             </div>
-                                    
+
                             <div style="margin-top:10px" class="form-group">
                                     <!-- Button -->
 
                                       <div class="col-sm-12 controls">
-                                        <input type="submit" id="btn-login" class="btn btn-primary" style="width:120px"/> 
+                                        <input type="submit" id="btn-login" class="btn btn-primary" style="width:120px"/>
                                       </div>
                             </div>
 
@@ -198,38 +195,37 @@ require './header.php';
                                 <!-- <div class="form-group">
                                     <div class="col-md-12 control">
                                         <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-                                            Don't have an account! 
+                                            Don't have an account!
                                         <a id="signuplink" href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
                                             Sign Up Here
                                         </a>
                                         </div>
                                     </div>
                                 </div>     -->
-                            </form>     
+                            </form>
 
 
 
-                        </div>                     
-                    </div>  
-         
-         </div> 
-                   
-           
+                        </div>
+                    </div>
+
+         </div>
+
+
               </div>
 
     </center>
-    
-         
- 
+
+
+
 </div>
-        
-    
-    
-    <script src="js/jquery-2.1.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+
+
+
+    <script src="./includes/js/jquery-2.1.1.min.js"></script>
+<script src="./includes/js/bootstrap.js"></script>
 
 </body>
 </html>
-        
-    
-    
+
+

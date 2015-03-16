@@ -20,7 +20,7 @@ class User{
 
 		if ( $privilege == 0) {
 
-			$query = "Select * from student where S_ID = '" . $user_id . "'";
+			$query = strtolower("Select * from student where S_ID = '" . $user_id . "'");
 			$result = mysqli_query($conn, $query);
 
 			if ( $result ) {
@@ -62,7 +62,7 @@ class User{
 
 			<?php
 
-		  		$query = "Select grub_id , name, date, mess from grubs where S_ID = '" . $this->user_id . "' order by date desc";
+		  		$query = strtolower("Select grub_id , name, date, mess from grubs where S_ID = '" . $this->user_id . "' order by date desc");
 
 				$result_1 = mysqli_query($conn, $query );
 
@@ -120,9 +120,9 @@ class User{
 			<h4>Grubs Signed</h4>
 
 			<?php
-				$query = "Select grubs.grub_id, grubs.name, grubs.date, grubs.mess from grub_signings inner join grubs where grubs.GRUB_ID  = grub_signings.grub_id and grub_signings.S_ID = '" . $this->user_id . "'";
+				$query = strtolower("Select grubs.grub_id, grubs.name, grubs.date, grubs.mess from grub_signings inner join grubs where grubs.GRUB_ID  = grub_signings.grub_id and grub_signings.S_ID = '" . $this->user_id . "'");
 				include CORE_URL . 'mysql_connect.php';
-				
+
 				$result_1 = mysqli_query($conn, $query );
 
    		?>
@@ -172,7 +172,7 @@ class User{
 	function get_mess_data() {
 		include CORE_URL . 'mysql_connect.php';
 
-  		$query = "Select bill_id, t_id, item_" . $this->mess . ".name, dor, student_takes_" . $this->mess . ".rate, qty from student_takes_" . $this->mess . " inner join item_" . $this->mess . " where item_" . $this->mess . ".item_id = student_takes_" . $this->mess . ".item_id and S_ID = '" . $this->user_id . "'";
+  		$query = strtolower("Select bill_id, t_id, item_" . $this->mess . ".name, dor, student_takes_" . strtolower( $this->mess ) . ".rate, qty from student_takes_" . $this->mess . " inner join item_" . $this->mess . " where item_" . $this->mess . ".item_id = student_takes_" . $this->mess . ".item_id and S_ID = '" . $this->user_id . "'");
 
    		$result_1 = mysqli_query($conn, $query );
 
@@ -217,15 +217,15 @@ class User{
 				$i++;
 
     		}
-			
-    		$query = "Select SUM(QTY*RATE) from student_takes_" . $this->mess . " where S_ID = '" . $this->user_id . "'"; 
-    		
+
+    		$query = strtolower("Select SUM(QTY*RATE) from student_takes_" . strtolower( $this->mess ) . " where S_ID = '" . $this->user_id . "'");
+
 			$result = mysqli_query($conn, $query);
 
     		if ( $result ) {
     			$result = mysqli_fetch_array($result);
     		}
-			
+
     	?>
 
 		   </tbody>
@@ -241,7 +241,7 @@ class User{
 	function get_anc_data() {
 		include CORE_URL . 'mysql_connect.php';
 
-		$query = "Select bill_id, t_id, item_ANC.name, dor, student_takes_ANC.rate, qty from student_takes_ANC inner join item_ANC where item_ANC.item_id = student_takes_ANC.item_id and S_ID = '" . $this->user_id . "'";
+		$query = strtolower("Select bill_id, t_id, item_ANC.name, dor, student_takes_ANC.rate, qty from student_takes_ANC inner join item_anc where item_anc.item_id = student_takes_ANC.item_id and S_ID = '" . $this->user_id . "'");
 
         $result_1 = mysqli_query($conn, $query );
         ?>
@@ -286,9 +286,9 @@ class User{
 
 				}
 		    }
-			
-			$query = "Select SUM(QTY*RATE) from student_takes_ANC where S_ID = '" . $this->user_id . "'"; 
-    		
+
+			$query = strtolower("Select SUM(QTY*RATE) from student_takes_ANC where S_ID = '" . $this->user_id . "'");
+
 			$result = mysqli_query($conn, $query);
 
     		if ( $result ) {
