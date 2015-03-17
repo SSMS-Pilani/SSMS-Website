@@ -1,0 +1,17 @@
+.vertical-line {
+    border-left: thick solid #ff0000;
+}
+.top-5 {margin-top:8px !important;}
+.top-6 {margin-top:13px;}
+
+.box-6 {overflow:hidden; margin-top:13px;}
+.box-6>div { width:290px; float:left; margin-right:35px;}
+.box-6 a.link-2 {display:inline-block; margin-bottom:3px;}
+
+.box-menu {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #dddddd;
+    width: 300px;
+    border-radius: 25px;
+}
