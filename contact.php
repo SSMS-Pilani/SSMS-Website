@@ -66,70 +66,57 @@
                 <!-- <div class="col-md-1"></div> -->
                 <div class="col-md-3">
                     <div class="box-6 top-5">
-                            <img src="images/rushyant.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                             <p><b><a href="#" class="link">Rushyant Reddy </b></a><br> President | SSMS<br>Contact:+91-8441000741</p>
                     </div>
                     <hr>
                     <div class="box-6 top-6">
-                        <img src="images/nithya.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                         <p><b><a href="#" class="link">Nithyashri Govindarjan </b></a><br>Expert Member | SSMS <br>Contact:+91-9535215787</p>
                     </div>
                     <hr>
                     <div class="box-6 top-6">
-                        <img src="images/tanay.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                         <p><b><a href="#" class="link">Tanay Dixit</b></a><br>Member | AMC <br>Contact:+91-9820495284</p>
                     </div>
                     <hr/>
                     <div class="box-6 top-5">
-                            <img src="images/abhilash.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                             <p><b><a href="#" class="link">C Abhilash Reddy</b></a><br> Mess Representative | MAL Mess<br>Contact:+91-7733015086</p>
                     </div>
                     <hr>
                     <div class="box-6 top-5">
-                            <img src="images/vishalp.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                             <p><b><a href="#" class="link">Vishal Patil</b></a><br> Mess Representative | SR Mess<br>Contact:+91-7733975679</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="box-6 top-5">
-                            <img src="images/arpit.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                             <p><b><a href="#" class="link">Arpit Sherma</b></a><br> Secretary | SSMS & Mess-rep, RPA Mess<br>Contact:+91-9785102668</p>
                     </div>
                     <hr>
                     <div class="box-6 top-6">
-                        <img src="images/sanjeed.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                         <p><b><a href="#" class="link">Sanjeed Schamnad</b></a><br>Expert Member | SSMS <br>Contact:+91-9929901857</p>
                     </div>
                     <hr>
                     <div class="box-6 top-5">
-                            <img src="images/nirali.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                             <p><b><a href="#" class="link">Nirali Kansara</b></a><br> Mess Representative | MB Mess<br>Contact:+91-9672018444</p>
                     </div>
                     <hr/>
                     <div class="box-6 top-5">
-                            <img src="images/virinchi.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                             <p><b><a href="#" class="link">K. Virinchi Reddy</b></a><br> Mess Representative | VKB Mess<br>Contact:+91-8504001947</p>
                     </div>
                     <hr>
                 </div>
                 <div class="col-md-3">
                     <div class="box-6 top-5">
-                            <img src="images/vishal.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                             <p><b><a href="#" class="link">Vishal </b></a><br> Treasurer | SSMS<br>Contact:+91-7568452250</p>
                     </div>
                     <hr>
                     <div class="box-6 top-6">
-                        <img src="images/pankhuri.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                         <p><b><a href="#" class="link">Pankhuri Kumar</b></a><br>Member | AMC. <br>Contact:+91-7734786263</p>
                     </div>
                     <hr>
                     <div class="box-6 top-6">
-                        <img src="images/ankur.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                         <p><b><a href="#" class="link">Ankur Bhardwaj</b></a><br>Mess Representative | SV Mess <br>Contact:+91-9772209944</p>
                     </div>
                     <hr/>
                     <div class="box-6 top-6">
-                        <img src="images/aravind.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                         <p><b><a href="#" class="link">Allameni Aravind</b></a><br>Mess Representative | KG Mess<br>Contact:+91-9772211572</p>
                     </div>
                     <hr>
@@ -137,18 +124,15 @@
                 <div class="col-md-3" style="border-left:2px">
                     <h3>For Technical Problems</h3>
                     <div class="box-6 top-5">
-                            <img src="images/deven.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
                             <p><b><a href="#" class="link">Deven Bansod</b></a><br> Technical Lead | SSMS<br>Contact:+91-9772224232</p>
                     </div>
                     <hr>
                     <div class="box-6 top-6">
-                        <img src="images/nikhil.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
-                        <p><b><a href="#" class="link">Nikhil Ramesh</b></a><br>Tech. Team Member | SSMS <br>Contact:+91-????</p>
+                        <p><b><a href="#" class="link">Nikhil Ramesh</b></a><br>Tech. Team Member | SSMS <br>Contact:+91-7728835767</p>
                     </div>
                     <hr>
                     <div class="box-6 top-6">
-                        <img src="images/karan.jpg" width="150px" height="170px" alt="" class="img-indent img-border">
-                        <p><b><a href="#" class="link">Karan Rajpal</b></a><br>Tech. Team Member | SSMS <br>Contact:+91-????</p>
+                        <p><b><a href="#" class="link">Karan Rajpal</b></a><br>Tech. Team Member | SSMS <br>Contact:+91-8504003662</p>
                     </div>
                     <hr>
                 </div>

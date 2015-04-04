@@ -37,7 +37,7 @@ require( WP_URL . 'wp-blog-header.php');
             </div>
         </div>
     </div>
-    
+
 
     <!-- Content ====================================================== =================================================-->
     <div class="container">
@@ -48,13 +48,13 @@ require( WP_URL . 'wp-blog-header.php');
                 <h2 class="blog-title">Society for Student Mess Services</h2>
                 <!-- <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p> -->
                 </div>
-                   
+
             </div>
             <div class="col-md-1"></div>
         </div>
-        <hr /> 
+        <hr />
         <div class="row">
-            
+
             <div class="col-md-1"></div>
             <div class="col-md-6">
                 <h2>Recent News</h2>
@@ -98,9 +98,9 @@ require( WP_URL . 'wp-blog-header.php');
               <div class="box-6 top-6" style="margin-top:-20px;">
                     <h4 style="font-size:150%;">Breakfast</h4>
                     <?php
-	
-						
-					
+
+
+
                         $query = "Select * from menu_item where DATE like '"  . date("Y-m-d") . " %' and bld = '1'";
                         // echo $query;
                         $result_breakfast = mysqli_query($conn, $query);
@@ -156,7 +156,7 @@ require( WP_URL . 'wp-blog-header.php');
         </div>
     </div>
     <!-- ==================================== Footer ============================================== -->
-<?php 
+<?php
 
 require_once 'footer.php';
 
