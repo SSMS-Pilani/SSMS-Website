@@ -57,25 +57,25 @@ require_once 'header.php';
                 <center style="margin:5px"><h2>The Team</h2></center>
                     <hr/>
 
-                    <center style="margin:5px"><h3>Executive Heads</h3>
+                    <center style="margin:5px"><h4><u><b><i>Executive Heads</u></b></i></h4>
                     <h4>President - Rushyant Reddy</h4>
                     <h4>Secretary - Arpit Sherma</h4>
                     <h4>Treasurer - Vishal</h4>
                     </center>
                     <hr/>
-                    <center style="margin:5px"><h3>AMC Members</h3>
+                    <center style="margin:5px"><h4><u><b><i>AMC Members</u></b></i></h4>
                     <h4>Rushyant Reddy | Tanay Dixit</h4>
                     <h4>Pankhuri Kumar | Vishal</h4>
                     </center>
                     <hr/>
-                    <center style="margin:5px"><h3>Mess Representatives</h3>
+                    <center style="margin:5px"><h4><u><b><i>Mess Representatives</u></b></i></h4>
                     <h4>Ankur Bharadwaj | Nirali Kansara</h4>
                     <h4>Allameni Aravind |  Abhilash Reddy</h4>
                     <h4>Arpit Sharma | Virinchi Reddy</h4>
                     <h4>Vishal Patil </h4>
                     </center>
                     <hr/>
-                    <center style="margin:5px"><h3>Technical Team</h3>
+                    <center style="margin:5px"><h4><u><b><i>Technical Team</u></b></i></h4>
                     <h4>Deven Bansod</h4>
                     <h4>Karan Rajpal</h4>
                     <h4>Nikhil Ramesh</h4>

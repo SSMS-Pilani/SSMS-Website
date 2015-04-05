@@ -1,7 +1,7 @@
 <?php
 
 include 'header.php';
-require( WP_URL . 'wp-blog-header.php');
+//require( WP_URL . 'wp-blog-header.php');
 
 ?>
 
