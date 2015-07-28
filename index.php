@@ -7,8 +7,8 @@ require( WP_URL . 'wp-blog-header.php');
 
     <!--Fixed navigation bar =======================================================================================-->
 
-   <div class="navbar navbar-inverse navbar-static-top navbar-custom">
-        <div class="container">
+   <div class="navbar navbar-inverse navbar-static-top navbar-custom" >
+        <div class="container" style="padding-right:0px">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -18,7 +18,7 @@ require( WP_URL . 'wp-blog-header.php');
                 </button>
                 <a href="#" class="navbar-brand" >SSMS</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" id="grad1">
                 <ul class="nav navbar-nav">
                     <li><a href="<?php echo ROOT_URL; ?>index.php"><u>Home</u></a></li>
                     <li><a href="<?php echo ROOT_URL; ?>about.php">About us</a></li>
@@ -34,18 +34,22 @@ require( WP_URL . 'wp-blog-header.php');
                     <?php } ?>
 
                 </ul>
+				<ul class="nav navbar-nav navbar-right">
+        <li><img src="images/facebook.png" style="width:22px;margin-top:12px;margin-right:10px;"></li>
+        <li><img src="images/twitter.png" style="width:22px;margin-top:12px;margin-right:20px;"></li>
+				</ul>
             </div>
         </div>
     </div>
     
 
     <!-- Content ====================================================== =================================================-->
-    <div class="container">
+    <div class="container" style="min-height:100%;">
         <div class="row" style="margin-bottom:-10px">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                <div class="blog-header" style="margin-top:-25px">
-                <h2 class="blog-title">Society for Student Mess Services</h2>
+                <div class="blog-header" style="">
+                <h2 class="blog-title" style="">Society for Student Mess Services</h2>
                 <!-- <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p> -->
                 </div>
                    
@@ -63,7 +67,7 @@ require( WP_URL . 'wp-blog-header.php');
                   <!-- <marquee  behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();"> -->
                     <?php if ( have_posts() ) : while ( have_posts()) : the_post(); ?>
 
-                    <?php the_date('','<h3 style="margin-top:-10px;margin-bottom:-10px">','</h3>'); ?>
+                    <?php the_date('','<h3 style="margin-top:-10px;margin-bottom:-10px;font-size:20px;">','</h3>'); ?>
 
                     <div class="post" id="post-<?php the_ID(); ?>">
                          <h3 class="storytitle"><?php the_title(); ?></h3>
@@ -159,7 +163,7 @@ require( WP_URL . 'wp-blog-header.php');
 require_once 'footer.php';
 
 ?>
-<script src="js/jquery-2.1.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="includes/js/jquery-2.1.1.min.js"></script>
+<script src="includes/js/bootstrap.js"></script>
 </body>
 </html>

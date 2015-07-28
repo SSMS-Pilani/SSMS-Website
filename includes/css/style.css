@@ -7,3 +7,97 @@
 .box-6 {overflow:hidden; margin-top:13px;}
 .box-6>div { width:290px; float:left; margin-right:35px;}
 .box-6 a.link-2 {display:inline-block; margin-bottom:3px;}
+.container
+{
+box-shadow: 0px 1px 2px #888888;
+width:100%;}
+
+.navbar-left a:hover{
+background-color:#888888;
+}
+#grad1 {
+    height: 300px;
+    background: -webkit-linear-gradient(white, #E4E0E0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #E4E0E0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #E4E0E0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #E4E0E0); /* Standard syntax (must be last) */
+}
+html{
+background:#6D6D6D}
+body{
+text-align:justify !important;
+font-family:"Century Gothic";
+width:90%;margin-left:5%;}
+h2, .h2 {
+    font-size: 30px;
+    color: #B33300;
+}
+h3, .h3 {
+    font-size: 24px;
+    color: #3A2D3D;
+}
+.navbar-header
+{
+
+}
+#menutab a
+{
+border:1px solid #4F5863;
+border-radius:2px;
+padding:5px;
+font-weight:bold;
+background:#2B6DAD;
+text-decoration:none;
+color:white;
+margin-top:10px
+}
+#search
+{margin:8px 0 0 5px;}
+ul li
+{
+padding-right:5px;
+}
+.navbar ul a:hover
+{
+color:#32B38E !important;
+background-color:#32B38E;}
+ a.active{
+ font-weight:bold;
+background-color:#E3E2E2 !important;
+border-bottom:3px solid #777;
+height:100%;}
+#rightribbon  li 
+{padding:5px;}
+
+.navbar-inverse
+{
+background-color:#fff;
+border-color:#fff !important;}
+.form-control
+{
+width:100%;
+height:80%;}
+.navbar-inverse .navbar-brand,.navbar-inverse .navbar-brand a:hover,.navbar-inverse .navbar-brand a:visited,.navbar-inverse .navbar-brand a:active
+{
+color:#fff;
+background-color:#32B38E !important;
+}
+
+.block 
+{
+width:100%;
+border:1px solid #D7D3D3;
+border-radius:3px;
+padding:2px;
+margin-bottom:5px;
+}
+.navbar
+{
+
+margin-bottom:5px;
+}
+.left-panel 
+{
+text-align:centre;
+padding-left:30px;
+}

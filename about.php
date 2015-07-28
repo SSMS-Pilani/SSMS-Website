@@ -5,8 +5,8 @@ require_once 'header.php';
 ?>
 
 <!--Fixed navigation bar =======================================================================================-->
-    <div class="navbar navbar-inverse navbar-static-top navbar-custom">
-        <div class="container">
+     <div class="navbar navbar-inverse navbar-static-top navbar-custom" >
+        <div class="container" style="padding-right:0px">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -16,7 +16,7 @@ require_once 'header.php';
                 </button>
                 <a href="#" class="navbar-brand" >SSMS</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" id="grad1">
                 <ul class="nav navbar-nav">
                     <li><a href="<?php echo ROOT_URL; ?>index.php">Home</a></li>
                     <li><a href="<?php echo ROOT_URL; ?>about.php"><u>About us</u></a></li>
@@ -32,9 +32,14 @@ require_once 'header.php';
                     <?php } ?>
 
                 </ul>
+				<ul class="nav navbar-nav navbar-right">
+        <li><img src="images/facebook.png" style="width:22px;margin-top:12px;margin-right:10px;"></li>
+        <li><img src="images/twitter.png" style="width:22px;margin-top:12px;margin-right:20px;"></li>
+				</ul>
             </div>
         </div>
     </div>
+    
 
 
     <!-- Content ====================================================== =================================================-->
