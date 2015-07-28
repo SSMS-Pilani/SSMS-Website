@@ -80,7 +80,7 @@ require './header.php';
 
     <!--Fixed navigation bar =======================================================================================-->
    <div class="navbar navbar-inverse navbar-static-top navbar-custom">
-        <div class="container">
+        <div class="container" style="padding-right:0px">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -90,7 +90,7 @@ require './header.php';
                 </button>
                 <a href="#" class="navbar-brand" >SSMS</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" id="grad1">
                 <ul class="nav navbar-nav">
                     <li><a href="<?php echo ROOT_URL; ?>index.php">Home</a></li>
                     <li><a href="<?php echo ROOT_URL; ?>about.php">About us</a></li>
@@ -132,7 +132,11 @@ require './header.php';
 <script type="text/javascript">function S(){
   document.getElementById('loginbox').style.display = "block";
 }</script>
+<div class="row" style="height:100%;margin-top:100px;">
+<div class="col-mg-12">
+<div class="col-md-6">
             <center>
+			<span class="glyphicon glyphicon-user" style="font-size:150px;margin-bottom:20px;margin-top:50px;"></span>
               <div id="gConnect" class="button">
                 <button class="g-signin"
                     data-scope="email"
@@ -141,17 +145,16 @@ require './header.php';
                     data-theme="dark"
                     data-cookiepolicy="single_host_origin">
                 </button>
-              </div>
-			  <p style="color:red">Please make sure you login with BITS Mail only</p>
+              </div><br>
+			  <p style="color:grey">*Please make sure you login with BITS Mail only</p>
             </center>
-
-
+</div><div class="col-md-6" style="border-left:1px solid #D8D8D8">
 <!-- =============================================SSMS login Form ======================================== -->
-        <center><h3><a href="#" onClick="S();" class="btn btn-primary">Login (for SSMS Team Only)</a></h3></center>
-        <div id="loginbox" style="margin-top:50px;display:none" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <center><h3><!--<a href="#" onClick="S();" class="btn btn-primary">Login (for SSMS Team Only)</a>--></h3></center>
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
             <div class="panel panel-info" >
                     <div class="panel-heading">
-                        <div class="panel-title">Sign In(Only for SSMS Team)</div>
+                        <div class="panel-title">Admin Login</div>
                         <!-- <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div> -->
                     </div>
 
@@ -210,7 +213,7 @@ require './header.php';
                     </div>
 
          </div>
-
+</div></div></div>
 
               </div>
 
